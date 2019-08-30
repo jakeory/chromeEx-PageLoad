@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "loadify",
+    "version": "1.0",
+    "description": "track and have your page load time graded",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./jquery.min.js","./main.js"],
+            "css": ["./index.css"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+      },
+      "icons": { "16": "small-logo.png",
+               "48": "small-logo.png",
+              "128": "small-logo.png" }
+}
